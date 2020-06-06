@@ -1,0 +1,163 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.start{
+    background-color: rgb(193, 243, 67) ;
+    width: 100%;
+    text-align: center;
+    font-size: 200%;
+    color:#fff;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-weight: 500;
+    /* font-family: 'Bebas Neue', cursive; */
+    font-family: 'Oswald', sans-serif;
+    line-height: 140%;
+    padding: 10px 0 10px 0;
+}
+dark{
+    color: rgb(0, 77, 51);
+}
+
+.wel{
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    margin: -10px;
+    padding:0px;
+    font-family: 'Oswald', sans-serif;
+
+}
+.text-main{
+    margin:50px auto;
+    /* line-height: 90%; */
+}
+name{
+    font-size: 80px;
+    color: rgb(193, 243, 67) ;
+    font-family: 'Bebas Neue',  Arial;
+    line-height: 130%;
+
+}
+.name p{
+    width: 620px;
+    margin: 0 auto;
+}
+.name{
+    padding-top: 50px;
+    height: 450px;
+    font-size: 20px;
+    line-height:150%;
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.527);
+}
+.navbar{
+    background-color: rgba(0, 0, 0, 0.233);
+    color: #fff !important  ;
+}
+.navbar a{
+    color: #fff !important;
+    font-size: 150%;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    padding:0 30px !important;
+}
+.navbar a:hover{
+    transition: all 0.5s ease;
+    color: rgb(163, 163, 163) !important;
+}
+.navbar ul{
+    position: absolute;
+    right:20px;
+  
+
+}
+.navbar button{
+    color: #fff;
+    border: 1px solid #fff;
+    width: 50px;
+    padding: 2px;
+}
+.navbar .navbar-toggler-icon{
+    border-bottom: 1px solid #fff !important; 
+    background-color: #fff;
+    height: 3px !important;
+    margin: 5px auto;
+    display: block !important;
+    
+
+    background-color: #fff !important  ;
+
+}
+.call{
+    color: #fff;
+    background-color: rgba(5, 5, 5, 0.473);
+    border: 1px solid rgb(193, 243, 67) ;
+    border-radius: 4px;
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    color: rgb(193, 243, 67) ;
+}
+.call:hover{
+    background-color: rgba(5, 5, 5, 0.74);
+    border: 1px solid rgb(236, 248, 204) ;
+    color: rgb(238, 253, 199) ;
+}
+.main{
+    background-color: rgba(0, 0, 0, 0.233) !important;
+    background-image: url(./img/1.jpg);
+    height: 600px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    padding: 0px !important;
+    background-attachment: fixed;
+    /* background-position: -300px -300px; */
+}
+@media only screen and (max-width: 600px) {
+    .start{
+        font-size: 100%;
+        line-height: 140%;
+        /* font-weight: bold; */
+    }
+    .navbar a{
+        font-size: 120%;
+    }
+    .navbar-brand{
+        font-size: 120% !important;
+    }
+    .navbar ul{
+        position: relative !important;
+        left: 0px;
+
+    }
+    .main{
+        height: 600px;
+    }
+    .text-main{
+        margin:50px auto;
+    }
+    name{
+        font-size: 50px;
+    }
+    .name{
+        text-align: center;
+        font-size: 20px;
+        line-height: 100%;
+        background-color: rgba(0, 0, 0, 0.418);
+        height: 380px;
+        margin-top: 10px !important;
+    }
+    .name p{
+        width: 100%;
+        text-align: center  ;
+    }
+}
