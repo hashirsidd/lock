@@ -5,6 +5,10 @@ body{
     overflow-x: hidden !important;
     width: 100%;
     background-color: #000 !important;
+    scroll-behavior: smooth !important;
+}
+html {
+	scroll-behavior: smooth;
 }
 .container-fluid{
     margin: 0px;
@@ -26,7 +30,7 @@ body{
     width: 100%;
     text-align: center;
     font-size: 200%;
-    color:rgb(150, 150, 150);
+    color:rgb(78, 78, 78);
     /* font-family: Arial, Helvetica, sans-serif; */
     font-weight: 500;
     /* font-family: 'Bebas Neue', cursive; */
@@ -35,6 +39,13 @@ body{
     font-weight: bolder;
 
     padding: 10px 0 10px 0;
+}
+.start a{
+    color:rgb(78, 78, 78) 
+}
+.start a:hover{
+    text-decoration: none;
+    color:rgb(133, 131, 131); 
 }
 dark{
     color: rgb(0, 77, 51);
@@ -71,10 +82,10 @@ name{
     line-height:150%;
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.925);
+    background-color: rgba(0, 0, 0, 0.90);
 }
 .navbar{
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgb(0, 0, 0);
     color: #fff !important  ;
     border-bottom: 1px solid rgb(68, 68, 68);
 }
@@ -114,7 +125,7 @@ name{
 }
 .call{
     color: #fff;
-    background-color: rgba(5, 5, 5, 0.95);
+    background-color: rgba(5, 5, 5, 0.90);
     border: 1px solid rgb(193, 243, 67) ;
     border-radius: 4px;
     margin-top:20px;
@@ -131,11 +142,12 @@ name{
     color: rgb(238, 253, 199) ;
 }
 .main-body{
-    position: relative;
-    top:130px;
+    margin-top: 50px;
+    
+    scroll-behavior: smooth !important;
 }
 .main{
-    background-color: rgba(0, 0, 0, 0.95) !important;
+    background-color: rgba(0, 0, 0, 0.90) !important;
     background-image: url(./img/1.jpg);
     height: 600px;
     
@@ -237,7 +249,7 @@ name{
 .sec2-2{
     padding: 20px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.90);
     text-align: left;
 }
 .sec2-2 p {
@@ -275,7 +287,7 @@ name{
 .sec3-1{
     padding: 20px;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.95);
+    background-color: rgba(0, 0, 0, 0.90);
     text-align: left;
 }
 color a{
@@ -283,14 +295,16 @@ color a{
     text-decoration: none;
 }
 .last{
-
     background-color: rgb(32, 31, 31);
-    height: 400px !important;
+    height: 800px !important;
     color: rgb(121, 120, 120);
     font-family: 'Oswald', sans-serif;
     /* font-weight: bolder; */
     
 
+}
+.em{
+    height: 50px!important;
 }
 .last a{
     color: rgb(121, 120, 120);
@@ -325,10 +339,23 @@ color a{
     position: fixed;
     top:0px;
     z-index: 9999;
+    background-color: lightcyan;
 }
 .fix1{
     position: fixed;
     top:50px;
+}
+.last img{
+    width: 200px;
+}
+.end{
+    font-size: 16px;
+    color: rgb(41, 41, 41) !important;
+    padding-top: 30px;
+    height: 140px;
+    text-align: center;
+    font-family:  Arial;
+    border-top: 1px solid rgb(193, 243, 67) ;;
 }
 @media only screen and (max-width: 600px) {
     .start{
@@ -337,7 +364,13 @@ color a{
         /* font-weight: bold; */
         text-align: center;
     }
-
+    .sec-1 .col-md-3{
+        height: 200px !important;
+        background-attachment: fixed;
+    }
+    .cen{
+        margin-top: 0px !important;
+    }
     .navbar{
         z-index: 9999;
         background-color: rgba(5, 7, 7, 0.98);
@@ -363,13 +396,13 @@ color a{
     
     
     .main{
-        
+        /* margin-top: 100px; */
         height: 730px;
-        background-position: fixed;
-        top: 10px;
+       /*  background-position: fixed;
+        top: 20px; */
     }
     .text-main{
-        margin:50px auto;
+        margin:140px auto;
     }
     name{
         font-size: 50px;
@@ -419,13 +452,29 @@ color a{
         top: 1200px; */
         height: 150px;
     }
-    .sec-1 .col-md-3{
-    }
+    
     body{
         overflow-x: hidden !important;
         width: 100%;
     }
     .main-body{
-        top:155px;
+        /* margin-top:155px; */
+    }
+    .last .col-md-3{
+        padding-left:100px;
+        padding-bottom: 40px;
     }
 }
+.ttop{
+    position: fixed;
+    bottom:0;
+    z-index: 9999;
+}
+
+#navbar {
+    z-index: 999;
+    position: fixed; /* Make it stick/fixed */
+    top: 0px; /* Stay on top */
+    width: 100%; /* Full width */
+    transition: top 0.5s; /* Transition effect when sliding down (and up) */
+  }
