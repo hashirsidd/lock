@@ -380,9 +380,8 @@ color a{
         font-size: 22px;
     }
     .navbar-brand{
-        font-size: 35px !important  ;
-
-        margin: 0 auto;
+        font-size: 30px !important  ;
+        margin-right: 50px;
     }
     .navbar ul{
          z-index: 9999;
